@@ -1,3 +1,5 @@
+pip install keras==2.2.4
+pip install tensorflow==1.13.1
 import tensorflow as tf
 from tensorflow import keras
 import streamlit as st

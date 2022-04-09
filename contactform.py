@@ -1,4 +1,4 @@
-import streamlit as st
+  import streamlit as st
 from PIL import Image
 from keras.preprocessing.image import load_img,img_to_array
 import numpy as np
@@ -20,13 +20,14 @@ local_css("style.css")
 # ---- HEADER SECTION ----
 with st.container():
     st.subheader("HELLO, WELCOME TO OUR SITE :wave:")
-    st.title("A BIG DATA TEAM FROM CDAC BANGLORU")
+    st.title("A BIG DATA TEAM FROM C-DAC, Bengaluru")
     st.write(
         """We are passionate about finding ways to use Python and BIG DATA .  
            We are aslo provide solutions for Big Data/ML.
         """
     )
     
+        
 model = load_model('leaf312.h5')
 labels = {0: 'Aam', 1: 'Adulsa', 2: 'Amrud', 3: 'Annar', 4: 'Ashoka', 5: 'Aswagandha', 6: 'Babul', 7: 'Bargad', 8: 'Candan', 9: 'Ghrit Kumari', 10: 'Giloy', 11: 'Gunja', 12: 'Gurhal', 13: 'Jamun', 14: 'Karanda', 15: 'Karanja', 16: 'Karela', 17: 'Katahal', 18: 'Malabar spinach',19: 'Mogra', 20: 'Neem', 21: 'Nimbu', 22: 'Pan', 23: 'Papaya', 24: 'Peepal', 25: 'Phagoora', 26: 'Pudina', 27: 'Rasna', 28: 'Sarso', 29: 'Tindora', 30: 'Tulsi'}         
 a={'Aam':'The extract of mango leaves have been used for a long time to cure asthma and it is believed that they are effective in treating diabetes. The leaves contain an abundance of nutrients. These greens are packed with pectin, fiber and vitamin C, which can be beneficial in controlling the blood sugar level.'}
